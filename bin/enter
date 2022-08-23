@@ -3,7 +3,7 @@ const program = require("commander");
 const chalk = require("chalk");
 
 program
-  .name("microApp-cli")
+  .name(require("../package.json").name)
   .usage(`<command> [option]`)
   .version(`microApp-cli ${require("../package.json").version}`);
 
